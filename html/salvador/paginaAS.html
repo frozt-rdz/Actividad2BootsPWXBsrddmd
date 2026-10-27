@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página A - Personal</title>
+
+    <!-- Fuente Roboto Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="#">¿Quién soy?</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Sobre Mí</a></li>
+                    <!-- Enlace a tu Página B -->
+                    <li class="nav-item"><a class="nav-link text-danger" href="paginaBS.html">Mis Películas
+                            Favoritas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="text-center py-5 fondo-morado">
+        <h1>¡Hola! Soy Salvador Ramírez Díaz</h1>
+        <p class="fs-5 text-warning">Estudiante de Ingeniería en Sistemas Computacionales</p>
+    </header>
+
+    <main class="container mt-4 mb-5">
+
+        <!-- Carrusel de Pasatiempos -->
+        <div id="carruselPersonal" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../../images/salvador/musica-banner.jpg" class="d-block w-100 img-carrusel" alt="Musica">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>Escuhar música</h5>
+                        <p>Descubrir nuevas canciones y artistas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../images/salvador/leer-banner.jpg" class="d-block w-100 img-carrusel" alt="Lectura">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>Leer</h5>
+                        <p>Mi foco de atencion son las novelas y libros de historia.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../images/salvador/fotografia-banner.jpg" class="d-block w-100 img-carrusel"
+                        alt="Running">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>Fotografía</h5>
+                        <p>Me gusta capturar momentos y la belleza de la naturaleza.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPersonal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselPersonal" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- INICIO DE GRID BOOTSTRAP -->
+        <div class="row">
+
+            <!-- Columna Principal (8 espacios) -->
+            <div class="col-lg-8">
+
+                <!-- INICIO DE CSS GRID (Reusamos la clase grid-peliculas para mantener el estilo) -->
+                <section class="grid-peliculas">
+
+                    <!-- Tarjeta de Datos Personales (Ancha) -->
+                    <div class="card bg-black text-white borde-naranja caja-ancha overflow-hidden">
+                        <div class="card-header fondo-naranja text-black">
+                            <h3 class="h5 m-0">Sobre mí</h3>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="../../images/salvador/foto-personal.jpg" alt="Mi foto"
+                                    class="h-100 w-100 object-fit-cover rounded-bottom-start">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <p class="mb-2">Mi nombre completo es Salvador Ramírez Diaz, Salva o Chava para los
+                                        amigos. Tengo 19 años, cumplo los 20 el 27 de diciembre, por si gustan pensar en
+                                        un regalo.</p>
+                                    <p class="mb-2">Amo la comida (no toda), tenga una hermana mayor y una perrita
+                                        chihuahua llamada Laika, ¿entienden la referencia?.</p>
+                                    <p class="mb-2">Tengo algunos videos en YouTube, nada profesional aún. Me gusta
+                                        compartir lo que se o hablar de temas que me interesan.</p>
+                                    <p class="mb-0">No soy nada sociable; me gusta pasar tiempo solo. Pese a eso,
+                                        siempre me encuentro rodeado de amigos, ¿raro? Tal vez; lo que sí puedo afirmar
+                                        es que hay gente buena allá afuera que vale la pena conocer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-black text-white borde-morado">
+                        <div class="card-body">
+                            <h3 class="h5 text-warning"><i class="bi bi-incognito"></i> ¿Sabías que...?</h3>
+                            <ul class="mb-0 ps-3 mt-3 fs-6">
+                                <li class="mb-2"><strong>Pronunciación:</strong> En primaria no sabia pronunciar la
+                                    doble r. Aprendí leyendo trabalenguas a diario como ejericicos de dicción; aún hoy
+                                    me llega a fallar.</li>
+                                <li class="mb-2"><strong>Peces:</strong> Maté dos peces por curiosidad. Era pequeño y
+                                    pense que podian aguantar más tiempo fuera del agua.</li>
+                                <li class="mb-0"><strong>Género:</strong> Mis padres no sabían si iba a ser niño o niña.
+                                    No me deje ver en el ultrasonido.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card bg-black text-white borde-naranja text-center d-flex justify-content-center">
+                        <div class="card-body mt-2">
+                            <h3 class="h5 text-danger mb-3">Mis Sitios Favoritos</h3>
+                            <a href="https://github.com" target="_blank" class="btn btn-outline-light mb-2 w-100"><i
+                                    class="bi bi-github"></i> GitHub</a>
+                            <a href="https://www.youtube.com" target="_blank"
+                                class="btn btn-outline-danger mb-2 w-100"><i class="bi bi-youtube"></i> YouTube</a>
+                            <a href="https://www.freecodecamp.org" target="_blank" class="btn btn-outline-info mb-2 w-100"><i
+                                    class="bi bi-fire"></i> freeCodeCamp</a>
+                            <a href="https://www.letterboxd.com" target="_blank" class="btn btn-outline-success w-100"><i
+                                    class="bi bi-film"></i> LetterBoxd</a>
+                        </div>
+                    </div>
+
+                </section>
+                
+
+            </div>
+
+            <!-- Columna Lateral (4 espacios) -->
+            <div class="col-lg-4 mt-4 mt-lg-0 d-flex flex-column gap-4">
+
+                <!-- Expectativas de la Materia -->
+                <div class="card bg-black text-white borde-morado h-100 d-flex flex-column">
+                    <div class="card-header fondo-morado text-center">
+                        <h3 class="h5 m-0">Expectativas de la Materia</h3>
+                    </div>
+                    <div class="card-body flex-grow-1">
+                        <blockquote class="blockquote fs-6 border-start border-warning border-3 ps-3 mb-4 mt-2">
+                            <p>"Mi principal objetivo es dominar herramientas frontend como CSS Grid y Bootstrap,
+                                combinándolas con mis conocimientos de bases de datos y backend."</p>
+                        </blockquote>
+                        <blockquote class="blockquote fs-6 border-start border-warning border-3 ps-3 mb-0">
+                            <p>"Quiero aplicar todo esto en proyectos reales de la universidad, como sistemas web con
+                                bases de datos relacionales y plataformas útiles."</p>
+                        </blockquote>
+                    </div>
+                    <img src="../../images/salvador/Charley from Ashburn.jpg" class="card-img-bottom img-desvanecida" alt="Decoracion">
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-black text-center py-4 border-top border-danger">
+        <p class="m-0 text-warning">Ramirez Diaz Salvador 24090951</p>
+        <p class="m-0">Programación Web XB</p>
+        <p class="m-0">Zacatepec, Morelos a 26 de octubre de 2026</p>
+    </footer>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

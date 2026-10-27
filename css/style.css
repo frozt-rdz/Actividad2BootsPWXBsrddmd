@@ -20,7 +20,7 @@ body {
     border: 1px solid #a855f7;
 }
 
-/* Tamaños de Imágenes (evita que se deformen) */
+/*Asi no de se deforman en el carrusel*/
 .img-carrusel {
     height: 400px;
     object-fit: cover;
@@ -31,7 +31,7 @@ body {
     object-fit: cover;
 }
 
-/* Animación básica al pasar el mouse por las tarjetas */
+/* Animación al pasar el mouse por las tarjetas */
 .card:hover {
     transform: translateY(-5px);
     transition: 0.3s;
@@ -40,12 +40,12 @@ body {
 /* Configuración del Grid */
 .grid-peliculas {
     display: grid;
-    /* Crea columnas de al menos 280px */
+    /*Columnas de al menos 280px*/
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 15px; /* Espacio entre tarjetas */
 }
 
-/* Ajustes para pantallas de computadora (más de 992px) */
+/* Ajustes para compus */
 @media (min-width: 992px) {
     .caja-ancha {
         grid-column: span 2; /* Ocupa 2 columnas de ancho */
@@ -56,13 +56,13 @@ body {
     }
 }
 
-/* Imagen con efecto de desvanecido*/
+/* Imagen desvanecida*/
 .img-desvanecida {
-    height: 180px; /* Puedes subir o bajar este número según el hueco que quede */
+    height: 180px; 
     object-fit: cover;
-    opacity: 0.6; 
+    opacity: 0.9; 
     
-    /* Crea el desvanecido*/
+    /* Crear desvanecido*/
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 80%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 80%);
 }
