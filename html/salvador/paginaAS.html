@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página A - Personal</title>
-
-    <!-- Fuente Roboto Slab -->
+    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS Propio -->
+    <!-- CSS propio -->
     <link rel="stylesheet" href="../../css/style.css">
-    <!-- Iconos de Bootstrap -->
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body class="bg-dark text-white">
 
-    <!-- Barra de Navegación -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
             <a class="navbar-brand text-warning" href="#">¿Quién soy?</a>
@@ -30,8 +29,8 @@
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Sobre Mí</a></li>
-                    <!-- Enlace a tu Página B -->
+                    <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Regresar</a></li>
                     <li class="nav-item"><a class="nav-link text-danger" href="paginaBS.html">Mis Películas
                             Favoritas</a></li>
                 </ul>
@@ -45,9 +44,10 @@
         <p class="fs-5 text-warning">Estudiante de Ingeniería en Sistemas Computacionales</p>
     </header>
 
+    <!-- Main -->
     <main class="container mt-4 mb-5">
 
-        <!-- Carrusel de Pasatiempos -->
+        <!-- Carrusel -->
         <div id="carruselPersonal" class="carousel slide mb-4" data-bs-ride="carousel">
             <div class="carousel-inner rounded">
                 <div class="carousel-item active">
@@ -81,18 +81,18 @@
             </button>
         </div>
 
-        <!-- INICIO DE GRID BOOTSTRAP -->
+        <!-- Grid de Bootstrap -->
         <div class="row">
 
-            <!-- Columna Principal (8 espacios) -->
+            <!-- Columna principal de 8, quedan 4 libres -->
             <div class="col-lg-8">
 
-                <!-- INICIO DE CSS GRID (Reusamos la clase grid-peliculas para mantener el estilo) -->
+                <!-- CSS Grid -->
                 <section class="grid-peliculas">
 
-                    <!-- Tarjeta de Datos Personales (Ancha) -->
+                    <!-- Tarjeta de mis datos-->
                     <div class="card bg-black text-white borde-naranja caja-ancha overflow-hidden">
-                        <div class="card-header fondo-naranja text-black">
+                        <div id="sobremi" class="card-header fondo-naranja text-black">
                             <h3 class="h5 m-0">Sobre mí</h3>
                         </div>
                         <div class="row g-0">
@@ -152,25 +152,22 @@
 
             </div>
 
-            <!-- Columna Lateral (4 espacios) -->
+            <!-- Columna lateral a 4 espacios restante, ya son 12 -->
             <div class="col-lg-4 mt-4 mt-lg-0 d-flex flex-column gap-4">
-
-                <!-- Expectativas de la Materia -->
                 <div class="card bg-black text-white borde-morado h-100 d-flex flex-column">
                     <div class="card-header fondo-morado text-center">
                         <h3 class="h5 m-0">Expectativas de la Materia</h3>
                     </div>
                     <div class="card-body flex-grow-1">
                         <blockquote class="blockquote fs-6 border-start border-warning border-3 ps-3 mb-4 mt-2">
-                            <p>"Mi principal objetivo es dominar herramientas frontend como CSS Grid y Bootstrap,
-                                combinándolas con mis conocimientos de bases de datos y backend."</p>
+                            <p>"Mi principal objetivo es dominar herramientas frontend como CSS y Bootstrap,
+                                combinándolas con mis conocimientos de bases de datos y entender como funciona el backend."</p>
                         </blockquote>
                         <blockquote class="blockquote fs-6 border-start border-warning border-3 ps-3 mb-0">
-                            <p>"Quiero aplicar todo esto en proyectos reales de la universidad, como sistemas web con
-                                bases de datos relacionales y plataformas útiles."</p>
+                            <p>"Quiero aplicar lo aprendido en proyectos reales colaborando con mis compañeros de clase."</p>
                         </blockquote>
                     </div>
-                    <img src="../../images/salvador/Charley from Ashburn.jpg" class="card-img-bottom img-desvanecida" alt="Decoracion">
+                    <img src="../../images/salvador/eva.gif" class="card-img-bottom object-fit-cover" alt="Decoracion">
                 </div>
 
             </div>

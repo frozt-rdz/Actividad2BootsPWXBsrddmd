@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página C -Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold" href="#nombrerazon">Ramadav</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio (Equipo)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5 fondo-morado">
+        <h1>Bienvenidos a nuestro proyecto</h1>
+        <p class="fs-5 text-warning mb-0">Conoce a nuestro equipo y las tecnologías que utilizamos</p>
+    </header>
+
+    <main class="container mt-4 mb-5">
+        <!--Carrusel con  las 5 minimas-->
+        <div id="carruselEquipo" class="carousel slide mb-5 border border-secondary rounded" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carruselEquipo" data-bs-slide-to="4"></button>
+            </div>
+
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="images/general/salva-banner.jpg" class="d-block w-100 img-carrusel" alt="Integrante 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>Salvador (Salva)</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/integrante2.jpg" class="d-block w-100 img-carrusel" alt="Integrante 2">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>David (Mastache)</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/general/ingk-banner.jpg" class="d-block w-100 img-carrusel" alt="IngK">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>IngK</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/integrante4.jpg" class="d-block w-100 img-carrusel" alt="Integrante 4">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>Especialista en Bases de Datos</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/integrante5.jpg" class="d-block w-100 img-carrusel" alt="Integrante 5">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+                        <h5>Analista de Control de Calidad</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselEquipo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselEquipo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+        <section class="grid-peliculas">
+            <div class="card bg-black text-white borde-naranja caja-ancha">
+                <div class="card-header fondo-naranja text-black">
+                    <h3 class="h5 m-0"><i class="bi bi-info-circle"></i> Presentación de la Actividad</h3>
+                </div>
+                <div class="card-body">
+                    <p class="mb-3">
+                        El objetivo de esta actividad es unir, a manera de rompecabezas, las prácticas realizadas a lo
+                        largo del Tema 2: HTML, XML y CSS.
+                        Buscamos crear un página web con un estilo minimalista a la vez que atractivo y responsivo, con
+                        una estética oscura que evoque al Día de los Muertos.
+                    </p>
+                    <p class="mb-0 text-secondary">
+                        Para lograrlo, integramos, de manera equilibrada, el grid, tanto de Bootstrap como el de CSS,
+                        así como algunas reglas de este último, demostrando el control sobre cómo se despliegan los
+                        elementos en diferentes tamaños de pantalla. A continuación, detallamos las tecnologías
+                        empleadas.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card bg-black text-white borde-morado">
+                <div class="card-body">
+                    <h4 class="h5 text-warning"><i class="bi bi-grid-3x3-gap"></i> CSS Grid Layout</h4>
+                    <p class="small mb-3">
+                        Presenta un sistema de cuadrícula bidimensional para CSS. Las cuadrículas se pueden utilizar
+                        para posicionar áreas principales de la página o pequeños elementos de la interfaz de usuario.
+                    </p>
+                    <p class="small mb-0 text-secondary">
+                        Nos permitió definir tamaños mínimos <code>minmax</code> y usar <code>auto-fit</code> para
+                        adaptar las columnas fluidamente al tamaño del monitor sin usar <code>@media</code> excesivos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-black text-white borde-morado">
+                <div class="card-body">
+                    <h4 class="h5 text-danger"><i class="bi bi-bootstrap"></i> Bootstrap 5</h4>
+                    <p class="small mb-0">
+                        Framework de CSS que implementamos para agilizar la construcción de la estructura principal.
+                        Aprovechamos su sistema de 12 columnas para la división general de la página, así como sus
+                        componentes preconstruidos para el <i>Navbar</i> interactivo y el Carrusel de imágenes.
+                    </p>
+                    <p class="small mb-0 text-secondary">
+                        Pese a que en clase usamos Bootstrap 6, preferimos usar la versión 5 la cual ya es estable respecto a la Alpha.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-black text-white borde-naranja">
+                <div class="card-body">
+                    <h4 class="h5 text-warning"><i class="bi bi-filetype-html"></i> HTML5 y CSS3</h4>
+                    <p class="small mb-0">
+                        Utilizamos HTML5 para la estructuración semántica del contenido empleando etiquetas como
+                        <code>main</code>, <code>section</code> y <code>header</code>. Por medio de CSS3 logramos las
+                        animaciones <i>hover</i> (desplazamiento en el eje Y) y las máscaras de degradado
+                        (<i>mask-image</i>) para mejorar la presentación visual de las fotografías.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-black text-center py-4 border-top border-danger mt-auto">
+        <p class="m-0 text-warning">Ramirez Diaz Salvador 24090951</p>
+        <p class="m-0 text-warning">Mastache De la paz David 24090917</p>
+        <p class="m-0">Programación Web XB</p>
+        <p class="m-0">Zacatepec, Morelos a 26 de octubre de 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
