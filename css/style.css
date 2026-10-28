@@ -17,7 +17,7 @@ body {
 }
 
 .borde-morado {
-    border: 1px solid #a855f7;
+    border: 1px solid #4A1C40;
 }
 
 /*Asi no de se deforman en el carrusel*/
@@ -66,3 +66,24 @@ body {
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 80%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 80%);
 }
+
+/* Boton instagram */
+  .btn-outline-purple {
+    color: #6f42c1;
+    border-color: #6f42c1;
+    background-color: transparent;
+  }
+
+  .btn-outline-purple:hover {
+    color: #fff;
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+  }
+
+  .btn-check:checked + .btn-outline-purple,
+  .btn-outline-purple.active, 
+  .btn-outline-purple:active {
+    color: #fff;
+    background-color: #59359a;
+    border-color: #59359a;
+  }
