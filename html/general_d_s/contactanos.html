@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página F - Contáctanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold" href="motivonombre.html">
+                <img src="../../images/general/ramadav.png" alt="Bootstrap" width="60" height="48">
+                &lt Ramadav &gt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acercade.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5 fondo-morado">
+        <h1>Contáctanos</h1>
+        <p class="fs-5 text-warning mb-0">Déjanos un mensaje y te responderemos pronto</p>
+    </header>
+
+    <main class="container my-5 flex-grow-1 d-flex align-items-center">
+        
+        <div class="row justify-content-center w-100">
+            <div class="col-lg-10">
+                
+                <div class="card bg-black text-white borde-morado shadow-lg">
+                    <div class="row g-0">
+                        <div class="col-md-7 p-4 p-lg-5">
+                            <h2 class="h4 text-warning mb-4"><i class="bi bi-send"></i> Formulario de Contacto</h2>
+                            
+                            <form action="#" method="POST">
+                                
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label text-secondary small">Nombre completo</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control bg-dark text-white border-secondary" placeholder="Ej. Salvador Ramírez" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label text-secondary small">Correo electrónico</label>
+                                    <input type="email" id="correo" name="correo" class="form-control bg-dark text-white border-secondary" placeholder="ejemplo@correo.com" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label text-secondary small">Asunto o Motivo</label>
+                                    <select id="asunto" name="asunto" class="form-select bg-dark text-white border-secondary" required>
+                                        <option value="" selected disabled>Selecciona una opción...</option>
+                                        <option value="duda">Duda sobre el proyecto</option>
+                                        <option value="colaboracion">Propuesta de colaboración</option>
+                                        <option value="saludo">Solo para saludar</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="mensaje" class="form-label text-secondary small">Tu mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-warning w-100 fw-bold py-2">
+                                    Enviar Mensaje <i class="bi bi-envelope-check ms-1"></i>
+                                </button>
+                                
+                            </form>
+                        </div>
+                        
+                        <div class="col-md-5 d-none d-md-block">
+                            <img src="../../images/general/linux2.gif" alt="Contáctanos" class="h-100 w-100 object-fit-cover rounded-end">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-black text-center py-4 border-top border-danger mt-auto">
+        <p class="m-0 text-warning">Ramírez Diaz Salvador 24090951</p>
+        <p class="m-0 text-warning">Mastache De la paz David 24090917</p>
+        <p class="m-0">Programación Web XB</p>
+        <p class="m-0">Zacatepec, Morelos a 26 de octubre de 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
