@@ -55,16 +55,6 @@ body {
         grid-row: span 2; /* Ocupa 2 filas de alto */
     }
 
-    .grid-david {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "carrusel"
-            "sobremi"
-            "sabiasque"
-            "expectativas"
-            "paginasfav";
-    }
-
 }
 
 /* Imagen desvanecida*/
