@@ -54,6 +54,17 @@ body {
     .caja-alta {
         grid-row: span 2; /* Ocupa 2 filas de alto */
     }
+
+    .grid-david {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "carrusel"
+            "sobremi"
+            "sabiasque"
+            "expectativas"
+            "paginasfav";
+    }
+
 }
 
 /* Imagen desvanecida*/
@@ -87,3 +98,20 @@ body {
     background-color: #59359a;
     border-color: #59359a;
   }
+
+  /* Grid david */
+  .grid-david {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "carrusel carrusel carrusel"
+        "sobremi sobremi expectativas"
+        "sabiasque paginasfav expectativas";
+  }
+
+  .gustos-carrusel { grid-area: carrusel; }
+  .sobremi-tarjeta { grid-area: sobremi; }
+  .expect-tarjeta { grid-area: expectativas; }
+  .sabiasq-tarjeta { grid-area: sabiasque; }
+  .paginasf-tarjeta { grid-area: paginasfav; }
