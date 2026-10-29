@@ -16,6 +16,10 @@ body {
     border: 1px solid #ff7b00;
 }
 
+.borde-amarillo {
+    border: 1px solid #FFC107;
+}
+
 .borde-morado {
     border: 1px solid #4A1C40;
 }
@@ -76,7 +80,11 @@ body {
   }
 
   .text-morado {
-    color:#4A1C40;
+    color: #a855f7;
+  }
+
+  .text-naranja {
+    color: #ff7b00;
   }
 
   .btn-outline-purple:hover {
