@@ -75,6 +75,10 @@ body {
     background-color: transparent;
   }
 
+  .text-morado {
+    color:#4A1C40;
+  }
+
   .btn-outline-purple:hover {
     color: #fff;
     background-color: #6f42c1;
