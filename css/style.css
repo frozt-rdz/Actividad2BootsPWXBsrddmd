@@ -97,12 +97,25 @@ body {
   .grid-david {
     display: grid;
     gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "carrusel"
+        "sobremi"
+        "sabiasque"
+        "expectativas"
+        "paginasfav";
+  }
+
+  /* Grid david: escritorio */
+    @media (min-width: 992px) {
+    .grid-david {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
         "carrusel carrusel carrusel"
         "sobremi sobremi expectativas"
         "sabiasque paginasfav expectativas";
   }
+    }
 
   .gustos-carrusel { grid-area: carrusel; }
   .sobremi-tarjeta { grid-area: sobremi; }
